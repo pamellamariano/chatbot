@@ -99,7 +99,7 @@ class PlantaoManager:
 
     def _proximo_plantao(self):
         hoje = datetime.now().date()
-        futuras = self.plantoes[self.plantoes['Data'] >= hoje]
+        futuras = self.plantoes[self.plantoes['Data'].dt.date >= hoje]
         futuras = futuras.sort_values('Data')
 
         for _, row in futuras.iterrows():
