@@ -1,8 +1,0 @@
-# Chatbot Plantão (v3 com suporte a PT/EN)
-
-Este é um chatbot de terminal modularizado que entende português e inglês. Ele gerencia escalas de plantão e aprende contatos.
-
-## Como usar
-
-pip install pandas
-python main.py
